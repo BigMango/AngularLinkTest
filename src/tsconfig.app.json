@@ -1,0 +1,28 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../out-tsc/app",
+    "baseUrl": "./",
+    "module": "es2015",
+    "experimentalDecorators": true,
+    // "skipLibCheck":true,
+    "types": [],
+    "paths": {
+      "@Common": [
+        "D:/PoYa/Project/TestProject/Framework/@Common/"
+      ],
+      "@Common/*": [
+        "D:/PoYa/Project/TestProject/Framework/@Common/*"
+      ],
+    }
+  },
+  "exclude": [
+    "test.ts",
+    "**/*.spec.ts"
+  ],
+  "include": [
+    "./**/*.ts",
+    "D:/PoYa/Project/TestProject/Framework/@Common/*.ts",
+    "../node_modules/sce-plugins/**/*.ts"
+  ]
+}

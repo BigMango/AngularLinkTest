@@ -1,0 +1,70 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../out-tsc/spec",
+    "baseUrl": "./",
+    "module": "commonjs",
+    "target": "es5",
+    "types": [
+      "jasmine",
+      "node"
+    ],
+    "paths": {
+      "@shared": [
+        "D:/PoYa/Project/AngularFramework/@Shared"
+      ],
+      "@shared/*": [
+        "D:/PoYa/Project/AngularFramework/@Shared/*"
+      ],
+      "@core": [
+        "D:/PoYa/Project/AngularFramework/@Core"
+      ],
+      "@core/*": [
+        "D:/PoYa/Project/AngularFramework/@Core/*"
+      ],
+      "@testing": [
+        "testing/"
+      ],
+      "@testing/*": [
+        "testing/*"
+      ],
+      "@env": [
+        "src/environments/"
+      ],
+      "@env/*": [
+        "src/environments/*"
+      ],
+      "@Framework": [
+        "D:/PoYa/Project/AngularFramework/@Framework/"
+      ],
+      "@Framework/*": [
+        "D:/PoYa/Project/AngularFramework/@Framework/*"
+      ],
+      "@Common": [
+        "D:/PoYa/Project/AngularFramework/@Common/"
+      ],
+      "@Common/*": [
+        "D:/PoYa/Project/AngularFramework/@Common/*"
+      ],
+      "@FrameworkPage": [
+        "D:/PoYa/Project/AngularFramework/@FrameworkPage/"
+      ],
+      "@FrameworkPage/*": [
+        "D:/PoYa/Project/AngularFramework/@FrameworkPage/*"
+      ]
+
+    }
+  },
+  "files": [
+    "test.ts",
+    "polyfills.ts",
+    "D:/PoYa/Project/AngularFramework/@Core/*.ts",
+    "D:/PoYa/Project/AngularFramework/@Shared/*.ts",
+    "D:/PoYa/Project/AngularFramework/@Framework/index.ts",
+    "D:/PoYa/Project/AngularFramework/@FrameworkPage/index.ts",
+    ],
+  "include": [
+    "**/*.spec.ts",
+    "**/*.d.ts"
+  ]
+}
